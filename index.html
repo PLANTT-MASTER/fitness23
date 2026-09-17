@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FitTrack es una plataforma original de entrenamiento físico para organizar rutinas, registrar progreso y consultar estadísticas."
+    />
+    <title>FitTrack | Entrena. Progresa. Supérate.</title>
+    <link rel="stylesheet" href="./fittrack.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-row">
+          <div class="brand-mark">F</div>
+          <div>
+            <div class="brand-name">FitTrack</div>
+            <div class="brand-sub">Training Hub</div>
+          </div>
+        </div>
+
+        <nav id="mainNav" class="nav" aria-label="Navegación principal"></nav>
+
+        <div class="mini-card">
+          <div class="muted-label">Rango actual</div>
+          <div class="range-box">
+            <strong id="currentRange">Atleta</strong>
+            <span id="rangeXP">0 / 1000 XP</span>
+          </div>
+          <div class="progress-track small">
+            <span id="rangeProgress" style="width: 85%"></span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow" id="pageEyebrow">Inicio</div>
+            <h1 id="pageTitle">Entrena. Progresa. Supérate.</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="ghost-btn" id="themeToggle" type="button">Modo oscuro</button>
+            <button class="primary-btn" id="quickStartBtn" type="button">Comenzar entrenamiento</button>
+          </div>
+        </header>
+
+        <div id="appContent" class="section-block"></div>
+      </main>
+    </div>
+
+    <script type="module" src="./fittrack.js"></script>
+  </body>
+</html>
